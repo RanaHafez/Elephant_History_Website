@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+</head>
+<body>
+
+
+<div class="box" id="heading">
+     <h1> {{ elephant['name'] }} </h1>
+</div>
+
+<div class="box padding-forms">
+    <img class="img" src="{{ elephant['image'] }}" alt="...">
+    {% if elephant['sex'] == "Female" %}
+    <h1>♀️ {{ elephant['name'] }} ( {{  elephant['dob'] }} - {{ elephant['dod'] }} )</h1>
+    {% else %}
+    <h1>♂️ {{ elephant['name'] }} ( {{  elephant['dob'] }} - {{ elephant['dod'] }} )</h1>
+    {% endif %}
+    <h1> {{ elephant['note'] }} </h1>
+
+    <ul>
+        <li>Is it Fictional? {{ elephant['fictional'] }}</li>
+        <li>Species {{ elephant['species'] }} </li>
+    </ul>
+
+    <a href="{{ elephant['wikilink'] }}">See More on Wikipedia</a>
+</div>
+
+</body>
+</html>

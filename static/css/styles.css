@@ -1,0 +1,42 @@
+body {
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(180deg, #a4a4bc 50%, #b4bccc 50%);
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+
+
+.card-img-top{
+    height: 250px;
+    width: 285px;
+}
+
+.elephant-card {
+    margin: 60px 20px 30px 60px;
+}
+
+.box {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.img {
+  height: 400px;
+  width: 600px;
+}
+
+#heading {
+  background-color: #a4acbc;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.padding-forms {
+   padding: 10px;
+}

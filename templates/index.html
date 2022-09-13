@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elephants</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+</head>
+<body>
+
+<div class="box" id="heading">
+    <h1>Explore Random Elephants in History</h1>
+</div>
+
+
+<div class="box center">
+    <h1>Hello, This is Rana. Lets Explore a random elephant 🐘 😉 !!!</h1>
+    <a type="submit" href="{{ url_for('random_elephant') }}" class="btn btn-outline-info">Get A Random Elephant 🐘 </a>
+    <h2>Rana 🐘 (2022)</h2>
+</div>
+
+<div class="box padding-forms">
+    <h2>Search The Elephant By Name</h2>
+    <form action="{{ url_for('get_elephant') }}" method="post">
+        <div class="mb-3">
+            <label class="form-label">Elephant Name</label>
+           <input type="text" class="form-control" name="name" autocomplete="off">
+<!--           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+         </div>
+        <button type="submit" class="btn btn-outline-info">Search Elephant  🐘 </button>
+    </form>
+</div>
+
+
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        {% for elephant in elephants %}-->
+<!--        <div class="col elephant-card">-->
+<!--            <div class="card" style="width: 18rem;">-->
+<!--                <img src="{{ elephant['image'] }}" class="card-img-top" alt="...">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">{{ elephant['name'] }}</h5>-->
+<!--                    <p class="card-text">{{ elephant['note'] }}</p>-->
+<!--                    <a href="{{ elephant['wikilink'] }}" class="btn btn-primary">Go somewhere</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        {% endfor %}-->
+<!--    </div>-->
+<!--</div>-->
+
+
+
+
+
+</body>
+</html>
